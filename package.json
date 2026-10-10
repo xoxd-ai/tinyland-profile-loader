@@ -21,7 +21,6 @@
     "build": "tsc",
     "dev": "tsc --watch",
     "clean": "rm -rf dist",
-    "prepublishOnly": "pnpm build && pnpm check:package",
     "test": "vitest run",
     "test:coverage": "vitest --coverage",
     "typecheck": "tsc --noEmit",
@@ -43,10 +42,6 @@
   },
   "engines": {
     "node": ">=22.0.0"
-  },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/",
-    "access": "public"
   },
   "packageManager": "pnpm@10.13.1",
   "homepage": "https://github.com/tinyland-inc/tinyland-profile-loader",
